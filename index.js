@@ -6,7 +6,6 @@ $('document').ready(function() {
       dataType: 'json',
       success: function(data) {
         $('#photos').append('<img src="' + data.message + '">');
-      console.log(data.message);
       },
       error: function() {
         console.log(':(')
